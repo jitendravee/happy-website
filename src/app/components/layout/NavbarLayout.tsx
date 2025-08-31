@@ -6,7 +6,7 @@ const NAV_LINKS = ["Home", "How It Works", "Products", "Trending", "Store"];
 
 export const NavbarLayout = () => {
   return (
-    <nav className="p-4 secondary-bg w-full  flex items-center justify-between">
+    <nav className="p-4  secondary-bg w-full  flex items-center justify-between">
       {/* Wrapper to balance left, middle, right */}
       <div className="flex items-center justify-between w-full max-w-7xl mx-auto">
         {/* Left: Logo */}

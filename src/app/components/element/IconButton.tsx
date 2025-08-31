@@ -19,11 +19,12 @@ export const IconButton: React.FC<IconButtonProps> = ({
   variant = "primary",
 }) => {
   const baseStyle =
-    "inline-flex items-center gap-2 px-6 py-2 rounded-full cursor-pointer ";
+    "inline-flex items-center justify-center gap-2 px-6 py-2 rounded-full cursor-pointer";
 
   const variants = {
     primary: "button-color text-white button-hover-color",
-    secondary: "bg-gray-200 text-black hover:bg-gray-300 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700",
+    secondary:
+      "bg-gray-200 text-black hover:bg-gray-300 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700",
   };
 
   return (
@@ -32,8 +33,7 @@ export const IconButton: React.FC<IconButtonProps> = ({
       className={`${baseStyle} ${variants[variant]} ${className}`}
     >
       <span>{title}</span>
-            <Icon className="w-5 h-5" />
-
+      <Icon className="w-5 h-5" />
     </button>
   );
 };

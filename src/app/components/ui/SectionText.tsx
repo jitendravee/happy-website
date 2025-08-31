@@ -27,7 +27,7 @@ export const TextSection: React.FC<TextSectionProps> = ({
   className = "",
 }) => {
   return (
-    <div className={`flex flex-col items-center gap-2 text-center ${className}`}>
+    <div className={`flex flex-col md:w-1/2 mx-auto items-center gap-2 text-center ${className}`}>
       <HeadTextBuilder
         as={heading.as}
         text={heading.text}
